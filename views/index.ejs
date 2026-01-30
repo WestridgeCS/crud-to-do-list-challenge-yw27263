@@ -21,6 +21,20 @@
   />
   <button class="btn" type="submit">Add</button>
 </form>
+<form>
+  <select name = "done" class= "input">
+    <option value="" <%= query.done === '' ? 'selected' : ''%>>
+      All
+    </option>
+    <option value="false" <%= query.done === 'false' ? 'selected' : '' %>>
+      Not Done
+    </option>
+    <option value="true" <%= query.done === 'true' ? 'selected' : ''%>>
+      Done
+    </option>
+  </select>
+  <button class="btn" type="submit">Filter</button>
+</form>
 
 <section class="card">
   <h2>Tasks</h2>
